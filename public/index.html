@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio showcasing profile, services, projects, skills and contact information." />
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a class="logo" href="#home">YN<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">My Works</a>
+        <a href="#skills">Skills</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR LEARNING & OPPORTUNITIES</p>
+        <h1>Hello, I'm <span class="gradient-text">Your Name.</span><br> I build things for the web.</h1>
+        <p class="hero-text">I'm a Computer Science student interested in software development and cybersecurity. I enjoy learning new technologies and turning ideas into useful projects.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore my work <span>↗</span></a>
+          <a class="button secondary" href="#contact">Let's connect</a>
+        </div>
+        <div class="hero-meta"><span>📍 India</span><span>✦ Curious mind</span><span>⌘ Always learning</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative code illustration">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="code-card">
+          <div class="code-top"><i></i><i></i><i></i><span>about_me.js</span></div>
+          <pre><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Your Name"</span>,
+  role: <span class="code-green">"Student Developer"</span>,
+  interests: [
+    <span class="code-green">"Web Development"</span>,
+    <span class="code-green">"Cybersecurity"</span>
+  ],
+  mindset: <span class="code-green">"Keep learning"</span>
+};
+
+<span class="code-blue">console</span>.log(developer);<span class="cursor">▍</span></pre>
+        </div>
+        <div class="floating-tag tag-top">✦ Creative problem solver</div>
+        <div class="floating-tag tag-bottom">{"<"} code with purpose /{">"}</div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / ABOUT ME</p>
+        <h2>A little about <span class="gradient-text">myself.</span></h2>
+      </div>
+      <div class="about-profile">
+        <div class="profile-visual">
+          <div class="profile-glow"></div>
+          <div class="profile-placeholder" aria-label="Profile photo placeholder">
+            <span class="profile-initials">YN</span>
+            <span class="profile-photo-hint">YOUR PHOTO</span>
+          </div>
+          <div class="profile-caption"><span class="status-dot"></span> Student Developer</div>
+        </div>
+        <div class="about-content">
+          <p class="about-kicker">GET TO KNOW ME</p>
+          <h3>I'm a curious learner who loves building <span class="gradient-text">digital experiences.</span></h3>
+          <p class="about-description">I'm a Computer Science student building my foundation in programming, web development and cybersecurity. I enjoy learning by creating practical projects, solving problems step by step and improving with every experiment.</p>
+          <div class="about-tabs" role="tablist" aria-label="About me details">
+            <button class="about-tab active" id="tab-skills" type="button" role="tab" aria-selected="true" aria-controls="aboutTabPanel" data-tab="skills">Skills</button>
+            <button class="about-tab" id="tab-experience" type="button" role="tab" aria-selected="false" aria-controls="aboutTabPanel" data-tab="experience">Experience</button>
+            <button class="about-tab" id="tab-education" type="button" role="tab" aria-selected="false" aria-controls="aboutTabPanel" data-tab="education">Education</button>
+          </div>
+          <div class="about-tab-panel" id="aboutTabPanel" role="tabpanel" aria-labelledby="tab-skills" tabindex="0">
+            <div class="tab-detail">
+              <span class="tab-date">CURRENTLY LEARNING</span>
+              <h4>Programming & Web Development</h4>
+              <p>HTML, CSS, JavaScript, C, Java and Python fundamentals.</p>
+            </div>
+            <div class="tab-detail">
+              <span class="tab-date">EXPLORING</span>
+              <h4>Cybersecurity & Databases</h4>
+              <p>Security fundamentals, networking and MongoDB.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">02 / WHAT I CAN EXPLORE</p>
+          <h2>My <span class="gradient-text">services.</span></h2>
+          <p class="section-intro">Areas I'm learning and building projects in. These cards describe my current interests and practice areas.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Web Development -->
+          <article class="service-card service-featured">
+            <div class="service-icon">&lt;/&gt;</div>
+            <h3>Web Development</h3>
+            <p>Building responsive websites with clear layouts, useful features and modern web technologies.</p>
+            <a href="#projects" class="service-link">Explore projects <span>↗</span></a>
+          </article>
+
+          <!-- UI / UX Design -->
+          <article class="service-card service-featured">
+            <div class="service-icon">▧</div>
+            <h3>UI / UX Design</h3>
+            <p>Exploring clean interfaces, thoughtful layouts and easy-to-use experiences for different screens.</p>
+            <a href="#projects" class="service-link">Explore projects <span>↗</span></a>
+          </article>
+
+          <!-- Programming -->
+          <article class="service-card service-featured">
+            <div class="service-icon">⌘</div>
+            <h3>Programming</h3>
+            <p>Practising programming fundamentals and creating small applications to strengthen problem-solving skills.</p>
+            <a href="#skills" class="service-link">View skills <span>↗</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">03 / WHAT I WORK WITH</p>
+          <h2>Skills & <span class="gradient-text">technologies.</span></h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Programming</h3><p>C · Java · Python</p></article>
+          <article class="skill-card"><div class="skill-icon">◈</div><h3>Web Development</h3><p>HTML · CSS · JavaScript</p></article>
+          <article class="skill-card"><div class="skill-icon">⛨</div><h3>Cybersecurity</h3><p>Security fundamentals · Networking</p></article>
+          <article class="skill-card"><div class="skill-icon">▤</div><h3>Tools & Database</h3><p>Git · GitHub · MongoDB</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects">
+      <div class="section-heading project-heading">
+        <div><p class="eyebrow">04 / SELECTED WORK</p><h2>My <span class="gradient-text">works.</span></h2></div>
+        <p class="section-subtitle">A collection of projects and experiments. Select a project to explore its details.</p>
+      </div>
+      <div class="project-toolbar">
+        <p class="project-count" id="projectCount" aria-live="polite">Loading projects…</p>
+        <div class="project-filters" id="projectFilters" aria-label="Filter projects"></div>
+      </div>
+      <div class="project-grid" id="projectGrid"><div class="loading-card">Loading projects...</div></div>
+    </section>
+
+    <section class="section wrap approach-section" id="approach">
+      <div class="section-heading"><p class="eyebrow">05 / MY APPROACH</p><h2>Thoughtful work, <span class="gradient-text">step by step.</span></h2></div>
+      <div class="approach-grid">
+        <article class="approach-card"><span class="approach-number">01</span><h3>Understand</h3><p>Start with the problem, the people using the product and what a useful result should look like.</p></article>
+        <article class="approach-card"><span class="approach-number">02</span><h3>Build</h3><p>Turn ideas into clear, maintainable interfaces and practical features using the right tools.</p></article>
+        <article class="approach-card"><span class="approach-number">03</span><h3>Improve</h3><p>Test the details, learn from feedback and keep refining the experience, accessibility and reliability.</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="wrap contact-grid">
+        <div><p class="eyebrow">06 / GET IN TOUCH</p><h2>Have an idea?<br><span class="gradient-text">Let's talk.</span></h2><p class="contact-copy">I'm always happy to connect, learn and discuss interesting ideas.</p><div class="contact-detail">✉ <a href="mailto:hello@example.com">hello@example.com</a></div><div class="contact-detail">⌖ India</div></div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Your name</label><input id="name" name="name" placeholder="Enter your name" required maxlength="80">
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required maxlength="160">
+          <label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Write your message..." required maxlength="2000"></textarea>
+          <button class="button primary submit-button" type="submit">Send message <span>↗</span></button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-to-top" id="backToTop" href="#home" aria-label="Back to top">↑</a>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="logo" href="#home">YN<span>.</span></a>
+      <p>Designed & built with curiosity. © <span id="year"></span> Your Name</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
